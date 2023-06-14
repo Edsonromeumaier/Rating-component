@@ -1,0 +1,111 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@500;700&family=Red+Hat+Display&display=swap');
+    *{
+        
+       
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;        
+    }  
+  :root {
+        --Orange: hsl(25, 97%, 53%);        
+        --White: hsl(0, 0%, 100%);
+        --LightGrey: hsl(217, 12%, 63%);
+        --MediumGrey: hsl(216, 12%, 54%);
+        --DarkBlue: hsl(213, 19%, 18%);
+        --VeryDarkBlue: hsl(216, 12%, 8%);
+           
+    }
+  
+
+    body {
+      height: 100vh;        
+      background-color: var(--VeryDarkBlue);
+     
+    }
+    main{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Overpass', sans-serif ; 
+
+    }
+    .card {
+      background-color: var(--DarkBlue);
+      height: 60%;
+      width: 40%;               
+      border-radius: 1.5em;
+      justify-content: center;
+        
+      
+    }   
+    .icon{
+    width: 3rem;
+    height: 3rem;
+    }
+
+    .circle-star{       
+        background-color: var(--MediumGrey);
+        border-radius: 50%;
+        padding: 0.5em;
+      }
+    .heading {
+      color:var(--White);
+      line-height: 1.7em;
+      font-weight: 700;
+      
+    }
+    
+    .paragraph{
+      color:var(--LightGrey);
+      line-height: 1.7em;
+      font-weight: 500;
+      text-align: left;
+
+    }
+
+    .seletores {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      
+        
+
+    }
+    .option{
+      
+      background-color: var(--MediumGrey);
+      border-radius: 0.8em;
+      padding:1em 2em;      
+      cursor: pointer;
+              
+    }
+    .circle{
+      display: none;
+    }
+    
+    .btn{
+      text-transform: uppercase;
+      width: 100%;
+      margin: 0.7em auto;
+      background-color: var(--Orange);
+      border-radius: 0.8em;
+      font-size: 15px;
+      color: var(--white);
+    }
+
+    .thankYou{
+      display: none;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 1.5em;
+      margin: 1.5em;
+      background-color: var(--DarkBlue);
+
+    } 
+    .attribution {
+      justify-content: flex-end;
+    
+  }
