@@ -1,6 +1,6 @@
 
 
-Essa solução foi inspirada pelo artigo:"Construindo uma modal semântica com o elemento <dialog>" escrito por [Angela Caldas](https://dev.to/sucodelarangela/construindo-uma-modal-semantica-com-o-elemento-1j88).
+Essa solução foi inspirada pelo artigo: "Construindo uma modal semântica com o elemento &lt;dialog&gt;.", escrito por [Angela Caldas](https://dev.to/sucodelarangela/construindo-uma-modal-semantica-com-o-elemento-1j88).
 
 ## Recomendações de acessibilidade web
 
