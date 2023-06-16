@@ -11,5 +11,5 @@ Recomendamos fortemente a leitura desse artigo para obter insights valiosos sobr
 
 Autora: [Angela Caldas ](https://dev.to/sucodelarangela)
 Título do Artigo: Construindo uma modal semântica com o elemento <dialog>
-Publicado em: (https://dev.to/)(https://dev.to/sucodelarangela/construindo-uma-modal-semantica-com-o-elemento-1j88)
+Publicado em: [https://dev.to/](https://dev.to/sucodelarangela/construindo-uma-modal-semantica-com-o-elemento-1j88)
 
