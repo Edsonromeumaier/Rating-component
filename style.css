@@ -24,6 +24,7 @@
      
     }
     main{
+      min-height: 100vh;
       display:flex;
       flex-direction: column;
       justify-content: center;
@@ -103,17 +104,23 @@
       font-size: 15px;
       color: var(--white);
       cursor: pointer;
+      transition: color 0.3s, filter 0.3s;
+    }
+    .btn:hover, .btn:focus{
+      filter: brightness(1.2);
+      color: var(--VeryDarkBlue);      
     }
 
-    .thankYu{      
-      
+    .thankYu{            
       text-align: center;
       padding: 1.5em;
       border-radius: 0.8rem;
       background-color: var(--DarkBlue);
-      width: min(37rem, 80%);
-
+      width: min(37rem, 80%);      
     } 
+    .thankYu::backdrop{
+      background:rgba(0, 0, 0, 0.7);
+    }
     .rating{
       background-color: var(--MediumGrey);
       border-radius: 0.8rem;
@@ -129,15 +136,15 @@
       padding: 0.4rem;
     }
     .btnClose{
-      display: fex;
+      display: flex;
       align-items:center;
       clip-path:circle();
       position: absolute;
       top:2rem;
       right:1rem;
       aspect-ratio:1/1;
-
     }
+    
 
     .attribution {
       justify-content: flex-end;

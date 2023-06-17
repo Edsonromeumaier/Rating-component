@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
-  <script defer src="./design/script.js"></script>
-  
+  <script defer src="./design/script.js"></script>  
 </head>
 <body>
      <main>
-      <div class="card">
+    <div class="card">
        <div class="icon">         
        <img src="./images/icon-star.svg" alt="star" class="circle-star">
       </div>     
@@ -20,39 +19,42 @@
             <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated 
             to help us improve our offering!</p>
        </div>
-      <form>
+      <form method="dialog">
                 <div class="seletores">
                   <div class="option">
-                      <input class="circle" type="radio" id="opt1" value="1">
-                      <label for="1">1</label>
+                      <input class="circle" type="radio" id="opt1" value="1" aria-label="Opção númer um">
+                      <label for="opt1">1</label>
                   </div>
 
                   <div class="option">
-                    <input class="circle" type="radio" id="opt2" value="2">
-                    <label for="2">2</label>
+                    <input class="circle" type="radio" id="opt2" value="2"aria-label="Opção númer dois">
+                    <label for="opt2">2</label>
                   </div>
 
                   <div class="option">
-                    <input class="circle" type="radio" id="opt3" value="3">
-                    <label for="3">3</label>
+                    <input class="circle" type="radio" id="opt3" value="3"aria-label="Opção númer três">
+                    <label for="opt3">3</label>
                   </div>
                   
                   <div class="option">
-                    <input class="circle" type="radio" id="opt4" value="4">
-                    <label for="4">4</label>
+                    <input class="circle" type="radio" id="opt4" value="4" aria-label="Opção númer quatro">
+                    <label for="opt4">4</label>
                   </div>
 
                   <div class="option">
-                    <input class="circle" type="radio" id="opt5" value="5">
-                    <label for="5">5</label>
+                    <input class="circle" type="radio" id="opt5" value="5"aria-label="Opção númer cinco">
+                    <label for="opt5">5</label>
                   </div>
                 </div>
       </form>           
-      <button class="btn" type="submit" id="btn"> Submit </button> 
+      <button class="btn" type="submit" id="btn"> Submit </button>
+    </div>  
       <!-- Rating state end -->
   <!-- Thank you state start -->    
-  <dialog open class="thankYu">
-    <button type="button" class="btnClose">Xis</button>
+  <dialog class="thankYu" aria-labelledby="dialog-title">
+
+    <button type="button" class="btnClose" aria-label="Fechar modal"> X </button>
+
     <div class="thanksHero">      
     <img src="./images/illustration-thank-you.svg" alt="Thank you!">
     </div>
@@ -62,7 +64,7 @@
       </div>
 
       <div class="text">
-      <h1 class="heading">Thank you! </h1>
+      <h1 class="heading" id="dialog-title">Thank you! </h1>
       <p class="paragraph">We appreciate you taking the time to give a rating. If you ever need more support, 
          don’t hesitate to get in touch!</p>   
       </div>
