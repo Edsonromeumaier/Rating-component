@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
-  <script defer src="./design/script.js"></script>  
+  <script src="./script.js"></script>  
 </head>
 <body>
-     <main>
+  <main>
     <div class="card">
        <div class="icon">         
        <img src="./images/icon-star.svg" alt="star" class="circle-star">
       </div>     
-       <div class="text">   
+       <div class="message">   
             <h1 class="heading">How did we do?</h1>
             <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated 
             to help us improve our offering!</p>
@@ -22,32 +22,35 @@
       <form method="dialog">
                 <div class="seletores">
                   <div class="option">
-                      <input class="circle" type="radio" id="opt1" value="1" aria-label="Opção númer um">
+                      <input type="radio" id="opt1" value="1" aria-label="Opção númer um" checked="">
                       <label for="opt1">1</label>
                   </div>
 
                   <div class="option">
-                    <input class="circle" type="radio" id="opt2" value="2"aria-label="Opção númer dois">
+                    <input type="radio" id="opt2" value="2"aria-label="Opção númer dois" checked="">
                     <label for="opt2">2</label>
                   </div>
 
                   <div class="option">
-                    <input class="circle" type="radio" id="opt3" value="3"aria-label="Opção númer três">
+                    <input type="radio" id="opt3" value="3"aria-label="Opção númer três" checked="">
                     <label for="opt3">3</label>
                   </div>
                   
                   <div class="option">
-                    <input class="circle" type="radio" id="opt4" value="4" aria-label="Opção númer quatro">
+                    <input type="radio" id="opt4" value="4" aria-label="Opção númer quatro" checked="">
                     <label for="opt4">4</label>
                   </div>
 
                   <div class="option">
-                    <input class="circle" type="radio" id="opt5" value="5"aria-label="Opção númer cinco">
+                    <input type="radio" id="opt5" value="5"aria-label="Opção númer cinco" checked="">
                     <label for="opt5">5</label>
                   </div>
                 </div>
+                
+                <button class="btn" type="submit" id="btn"> Submit </button>
+
       </form>           
-      <button class="btn" type="submit" id="btn"> Submit </button>
+
     </div>  
       <!-- Rating state end -->
   <!-- Thank you state start -->    

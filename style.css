@@ -33,15 +33,16 @@
 
     }
     .card {
-      background-color: var(--DarkBlue);
-      height: 60%;
-      width: 40%;               
+      background-color: var(--DarkBlue);      
+      max-width: 27.6rem;               
       border-radius: 1.5em;
-      justify-content: center;
-        
+      padding: 1.8rem 1.5rem 2rem;     
       
     }   
     .icon{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     width: 3rem;
     height: 3rem;
     }
@@ -51,9 +52,11 @@
         border-radius: 50%;
         padding: 0.5em;
       }
-      .text{
 
+     .message{
+        margin-bottom: 1.5rem;
       }
+      
     .heading {
       color:var(--White);
       line-height: 1.7em;
@@ -75,22 +78,37 @@
       display: flex;
       justify-content: space-between;
       margin: 0 auto;
-      
-        
-
     }
+    
     .option{
       
       background-color: var(--MediumGrey);
       border-radius: 0.8em;
       padding:1em 2em;      
+      cursor: pointer;              
+    }
+
+    .option label{
+      transition: background-color .3s ease-in-out,color .8s ease-in-out;
+    }
+
+    .option label:hover{
+      background-color: var(--Orange);
+      color: var(--white);
       cursor: pointer;
-              
     }
-    .circle{
+  
     
+    
+    .option input[type="radio"]{
+      position:absolute;
+      z-index: -1;
     }
-    
+
+    .option input[type="radio"]:checked + label{
+      background-color: var(--MediumGrey);
+      color: var(--white);
+    }
     .btn{
       text-transform: uppercase;
       font-weight: 500;
@@ -106,6 +124,8 @@
       cursor: pointer;
       transition: color 0.3s, filter 0.3s;
     }
+
+
     .btn:hover, .btn:focus{
       filter: brightness(1.2);
       color: var(--VeryDarkBlue);      
