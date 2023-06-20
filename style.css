@@ -1,11 +1,9 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@500;700&family=Red+Hat+Display&display=swap');
-    *{
-        
+    *{     
        
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;        
+        
     }  
   :root {
         --Orange: hsl(25, 97%, 53%);        
@@ -45,12 +43,13 @@
     justify-content:flex-start;
     width: 3rem;
     height: 3rem;
+    
     }
 
     .circle-star{       
         background-color: var(--MediumGrey);
         border-radius: 50%;
-        padding: 0.5em;
+        padding: 1em;         
       }
 
      .message{

@@ -1,4 +1,4 @@
-const modal=document.querySelector(".thankYu");
+const modal= document.querySelector(".thankYu");
 
 const openModalBtn = document.querySelector(".btn");
 
@@ -13,7 +13,7 @@ const ratingElement = document.getElementsByClassName('rating');
 
 openModalBtn.addEventListener("click",() => {
     cardElement.style.display = "none";
-    modal.showModal();
+    modal.show();
 });
 
 closeModalBtn.addEventListener("click",()=> { 
