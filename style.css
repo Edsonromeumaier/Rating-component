@@ -53,7 +53,7 @@
       }
 
      .message{
-        margin-bottom: 1rem;
+        margin-bottom: 0.6rem;
         display: flex;
         justify-content: flex-start;
         align-items:flex-start;
@@ -61,6 +61,7 @@
       }
       
     .heading {
+      
       color:var(--White);
       line-height: 1.7em;
       font-weight: 700;
@@ -71,7 +72,7 @@
     .paragraph{
       color:var(--white);
       line-height: 1.7em;
-      font-weight: 500;
+      font-weight: 700;
       text-align:start;
       margin-bottom: 1.2rem;
 
@@ -90,29 +91,37 @@
       border-radius: 50%;
       padding:1em 1.3em;      
       cursor: pointer;              
+      color: var(--White);
+      transition: color 0.3s, filter 0.3s;
     }
 
     .option label{
       transition: background-color .3s ease-in-out,color .8s ease-in-out;
     }
-
-    .option label:hover{
-      background-color: var(--Orange);
-      color: var(--white);
-      cursor: pointer;
-    }
-  
-    
-    
+   
     .option input[type="radio"]{
       position:absolute;
       z-index: -1;
-    }
-
-    .option input[type="radio"]:checked + label{
       background-color: var(--MediumGrey);
       color: var(--white);
     }
+    
+
+    .option input[type="radio"]:checked{
+      background-color: var(--Orange);
+      color: var(--white);
+    }
+
+
+    .option:hover{
+      background-color: var(--Orange);
+      color: var(--white);
+      cursor: pointer;
+      transition: background-color .8s ease-in-out,color .8s ease-in-out;
+      
+    }
+  
+
     .btn{
       text-transform: uppercase;
       font-weight: 500;
@@ -132,6 +141,12 @@
     .btn:hover, .btn:focus{
       filter: brightness(1.2);
       color: var(--VeryDarkBlue);      
+    }
+
+    .btn:active{
+      color: var(--Orange);
+      background-color: var(--White);
+      transition: 0ms;
     }
 
     .thankYu{            
