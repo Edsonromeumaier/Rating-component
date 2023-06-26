@@ -14,10 +14,9 @@
         --VeryDarkBlue: hsl(216, 12%, 8%);
            
     }
-  
 
     body {
-      height: 100vh;        
+              
       background-color: var(--VeryDarkBlue);
      
     }
@@ -59,6 +58,13 @@
         align-items:flex-start;
         flex-direction: column;
       }
+      .messageThank{
+        margin-bottom: 0.6rem;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        flex-direction: column;
+      }
       
     .heading {
       
@@ -66,6 +72,14 @@
       line-height: 1.7em;
       font-weight: 700;
       text-align: left;
+      
+    }
+    .headingThank{
+       
+      color:var(--White);
+      line-height: 1.7em;
+      font-weight: 700;
+      text-align: center;
       
     }
     
@@ -76,6 +90,14 @@
       text-align:start;
       margin-bottom: 1.2rem;
 
+    } 
+    .paragraphThank{
+      color:var(--white);
+      line-height: 1.7em;
+      font-weight: 700;
+      text-align:center;         
+      margin-bottom: 1.2rem;
+      
     }
 
     .seletores {      
@@ -154,24 +176,29 @@
       background-color: var(--White);
       transition: 0ms;
     }
+    .text{box-sizing: border-box;}
+    
 
     .thankYu{            
       text-align: center;
       padding: 1.5em;
       border-radius: 0.8rem;
       background-color: var(--DarkBlue);
-      width: min(37rem, 80%);      
+      max-width:37rem;
+      width: 80%;
+      margin-top: 6rem; 
+        
     } 
+    
     .thankYu::backdrop{
       background:rgba(0, 0, 0, 0.7);
     }
     .rating{
       background-color: var(--MediumGrey);
       border-radius: 0.8rem;
-      margin-top: 1.8rem;
-      margin-right: 9rem;
+      margin-top: 1.8rem;      
       margin-bottom: 1.8rem;
-      margin-left: 9rem;
+      
     }
     .rating p{
       color: var(--Orange);
@@ -194,3 +221,5 @@
       justify-content: flex-end;
     
   }
+
+ 

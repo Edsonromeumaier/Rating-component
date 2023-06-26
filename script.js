@@ -21,7 +21,7 @@ form.addEventListener('submit', function(event) {
   var selected = document.querySelector('input[name="rating"]:checked');
 
   if (selected) {
-    var value = selected.value+" ";
+    var value = selected.value;
     ratingElement.textContent = value;
   } else {
     ratingElement.textContent = 'Nenhuma opção selecionada';
