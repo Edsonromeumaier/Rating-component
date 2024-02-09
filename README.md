@@ -1,3 +1,18 @@
+## Interactive rating component
+
+![componente](./images/Screenshot1.png)
+
+![codigo](./images/Screenshot2.png)
+
+
+
+### Links
+
+-  [Solution URL](https://github.com/Edsonromeumaier/Rating-component)
+-  [Live Site URL](https://rating-component-zeta-one.vercel.app/)
+
+
+
 
 ## Recomendações de acessibilidade web
 **Referência:**
